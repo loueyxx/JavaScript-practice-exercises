@@ -67,21 +67,32 @@
 //titleCase("hello i am chloe");
 
 
-function largestOfFour(arr) {
-  var results = [];
+//function largestOfFour(arr) {
+  //var results = [];
   
   //create outer loop
-  for (var ol = 0; ol < arr.length; ol++){
-    var largestNumber = arr[ol][0];
+  //for (var ol = 0; ol < arr.length; ol++){
+    //var largestNumber = arr[ol][0];
       //create inner loop
-      for (var il = 1; il < arr[ol].length; il++){
-        if(arr[ol][il] > largestNumber) {
-          largestNumber = arr[ol][il];
-        }
-      }
-      results[ol] = largestNumber;
+      //for (var il = 1; il < arr[ol].length; il++){
+        //if(arr[ol][il] > largestNumber) {
+          //largestNumber = arr[ol][il];
+        //}
+      //}
+      //results[ol] = largestNumber;
+  //}
+  //return results;
+//}
+
+//largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+
+function repeatStringNumTimes(str, num) {
+  if (num > 0) {
+   return str.repeat(num);
+} else {
+      return "";
   }
-  return results;
 }
 
-largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+repeatStringNumTimes("abc", 3);
