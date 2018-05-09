@@ -113,3 +113,12 @@ function truncateString(str, num) {
 }
 
 truncateString("A-tisket a-tasket A green and yellow basket", 11);
+
+function chunkArrayInGroups(arr, size) {
+  var newArray = [];
+
+  while (arr.length) {
+    newArray.push(arr.splice(0, size));
+  }
+ return newArray;
+}
