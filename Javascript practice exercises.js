@@ -96,3 +96,20 @@ function repeatStringNumTimes(str, num) {
 }
 
 repeatStringNumTimes("abc", 3);
+
+function truncateString(str, num) {
+   var newString = "";
+  
+  if (num <= 3){
+   newString = str.substr(0, num);
+  } else {
+    newString = str.substr(0, num -3);
+  }
+  
+  if (num >= str.length){
+    return str;
+  }
+    return newString.concat("...");
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
