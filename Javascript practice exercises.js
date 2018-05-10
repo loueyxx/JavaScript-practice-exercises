@@ -122,3 +122,26 @@ function chunkArrayInGroups(arr, size) {
   }
  return newArray;
 }
+
+function slasher(arr, howMany) {
+  arr.splice(0, howMany);
+  return arr;
+}
+
+slasher([1, 2, 3], 2);
+
+
+function mutation(arr) {
+
+  var firstWord = arr[1].toLowerCase();
+  var secondWord = arr[0].toLowerCase();
+    
+  for (var i = 0; i < firstWord.length; i++){
+    if (secondWord.indexOf(firstWord[i]) === -1) {
+      return false;
+    }
+   }
+  
+  return true;
+}
+mutation(["bike", "bike"]);
